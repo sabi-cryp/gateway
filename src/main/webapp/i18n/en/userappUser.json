@@ -1,0 +1,28 @@
+{
+  "jhipsterGatewayDemoApp": {
+    "userappUser": {
+      "home": {
+        "title": "Users",
+        "createLabel": "Create a new User",
+        "createOrEditLabel": "Create or edit a User",
+        "notFound": "No Users found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete User {{ id }}?"
+      },
+      "detail": {
+        "title": "User"
+      },
+      "fristname": "Fristname",
+      "lastname": "Lastname",
+      "password": "Password"
+    }
+  },
+  "userappApp": {
+    "userappUser": {
+      "created": "A new User is created with identifier {{ param }}",
+      "updated": "A User is updated with identifier {{ param }}",
+      "deleted": "A User is deleted with identifier {{ param }}"
+    }
+  }
+}

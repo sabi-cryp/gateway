@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="user">
+            <h2><span jhiTranslate="jhipsterGatewayDemoApp.userappUser.detail.title">User</span> {{ user.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterGatewayDemoApp.userappUser.fristname">Fristname</span></dt>
+                <dd>
+                    <span>{{ user.fristname }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterGatewayDemoApp.userappUser.lastname">Lastname</span></dt>
+                <dd>
+                    <span>{{ user.lastname }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterGatewayDemoApp.userappUser.password">Password</span></dt>
+                <dd>
+                    <span>{{ user.password }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/user', user.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
